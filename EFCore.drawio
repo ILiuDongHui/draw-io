@@ -1,1 +1,22 @@
-<mxfile host="app.diagrams.net" modified="2020-09-13T02:56:05.332Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36 Edg/85.0.564.51" version="13.6.6" etag="Kugh1_ULz_8KBAoJL8Af" type="github"><diagram id="dVKf7UJClvQ9XPE-51pF">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-09-13T03:59:27.346Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36 Edg/85.0.564.51" etag="Gc73tH0fsNmw4CQZzjFy" version="13.6.6" type="github">
+  <diagram id="dVKf7UJClvQ9XPE-51pF" name="Page-1">
+    <mxGraphModel dx="1230" dy="922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1KdwzK038CdsFBR5au0s-2" value="&lt;h1&gt;EFCore .NET Core CLI&lt;/h1&gt;&lt;p&gt;安装：dotnet tool install --global dotnet-ef&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="370" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1KdwzK038CdsFBR5au0s-3" value="&lt;h1&gt;dotnet ef migrations add &amp;lt;迁移名称&amp;gt; --project &amp;lt;将要创建迁移文件的项目路径&amp;gt;&lt;/h1&gt;&lt;p&gt;创建一个迁移&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="920" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="1KdwzK038CdsFBR5au0s-4" value="&lt;h1&gt;dotnet ef database update&lt;/h1&gt;&lt;p&gt;更新数据库架构&lt;/p&gt;&lt;p&gt;如果数据库尚未创建，自动创建数据库&lt;/p&gt;&lt;p&gt;&lt;br&gt;（适用环境：开发、测试）&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="380" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="1KdwzK038CdsFBR5au0s-5" value="&lt;h1&gt;dotnet ef migrations script &amp;lt;from&amp;gt; &amp;lt;to&amp;gt;&lt;/h1&gt;&lt;p&gt;生成从&amp;lt;给定的迁移&amp;gt;到&amp;lt;指定迁移&amp;gt;的 SQL 脚本&lt;/p&gt;&lt;p&gt;from：给定的迁移&lt;/p&gt;&lt;p&gt;to：指定的迁移（不指定，则默认为最新的迁移）&lt;/p&gt;&lt;p&gt;（适用环境：生产，CI）&lt;/p&gt;&lt;p&gt;&lt;b&gt;实际应用：&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;1. 在发版前，创建一个迁移，使用 dotnet ef migrations add &amp;lt;本次迁移的名称&amp;gt; --project &amp;lt;将要创建迁移文件的项目路径&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;2. 通过此命令，生成SQL脚本，仔细检查是否存在数据丢失问题&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;3. 将SQL脚本发送给运维&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;4. 在测试环境测试SQL脚本&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;5. 在生产环境的数据库中执行&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="510" width="920" height="310" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
